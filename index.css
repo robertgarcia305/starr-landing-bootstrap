@@ -5,3 +5,34 @@ small text 14px*/
 img {
     width: 100px;
 }
+.nav-wrap {
+    background-color: black;
+    border: 1px solid red;
+}
+nav {
+    display: flex;
+    width: 1440px;
+    border: 1px solid red;
+}
+nav div {
+    border: 1px solid red;
+}
+.container {
+    border: 1px solid red;
+}
+.container-fluid img {
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: beige;
+}
+
+@media (max-width: 1440px) {
+    nav {
+        display: flex;
+        width: 100%;
+        border: 1px solid red;
+    }
+}
