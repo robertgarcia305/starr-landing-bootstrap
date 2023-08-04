@@ -1,3 +1,20 @@
+@font-face {
+    font-family: montserrat-medium;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+h3 {
+    font-size: 30px;
+    font-family: montserrat-bold;
+}
+p {
+
+}
+
 /* main headers 30px;
 sub headers 25px
 regular text 16px 
@@ -11,14 +28,20 @@ img {
 }
 nav {
     display: flex;
-    width: 1440px;
-    border: 1px solid red;
+    width: 100%;
+    
 }
 nav div {
-    border: 1px solid red;
+    
+}
+
+.nav-elems {
+    display: flex;
+    width: 100%;
+    justify-content: right;
 }
 .container {
-    border: 1px solid red;
+    
 }
 .container-fluid img {
     width: 100%;
@@ -28,6 +51,17 @@ nav div {
     background-color: black;
     color: beige;
 }
+
+.nav-dark {
+    --bs-navbar-toggler-border-color:rgba(226, 33, 33, 0.644);
+}
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
 
 @media (max-width: 1440px) {
     nav {

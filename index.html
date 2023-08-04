@@ -12,82 +12,105 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/starr-logo.png" alt="Avatar Logo"> 
-                </a>
-            </div>
-            <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">NEW ARRIVALS</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="mensDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            MENS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="mensDropdown">
-                            <a class="dropdown-item" href="#">Tops</a>
-                            <a class="dropdown-item" href="#">Bottoms</a>
-                            <a class="dropdown-item" href="#">Shoes</a>
+        <div class="container-fluid bg-dark d-flex justify-content-center">
+            <nav class="navbar-toggler navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/starr-logo.png" alt="Avatar Logo"> 
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="#">NEW ARRIVALS</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="mensDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        MENS
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="mensDropdown">
+                                        <a class="dropdown-item" href="#">Tops</a>
+                                        <a class="dropdown-item" href="#">Bottoms</a>
+                                        <a class="dropdown-item" href="#">Shoes</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="womensDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        WOMENS
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="womensDropdown">
+                                        <a class="dropdown-item" href="#">Tops</a>
+                                        <a class="dropdown-item" href="#">Bottoms</a>
+                                        <a class="dropdown-item" href="#">Shoes</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        KIDS
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="kidsDropdown">
+                                        <a class="dropdown-item" href="#">Boys</a>
+                                        <a class="dropdown-item" href="#">Girls</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="womensDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            WOMENS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="womensDropdown">
-                            <a class="dropdown-item" href="#">Tops</a>
-                            <a class="dropdown-item" href="#">Bottoms</a>
-                            <a class="dropdown-item" href="#">Shoes</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            KIDS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="kidsDropdown">
-                            <a class="dropdown-item" href="#">Boys</a>
-                            <a class="dropdown-item" href="#">Girls</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                    </nav>
+                </div>
+            </nav>
+        </div>
         <!-- hero -->
         <div class="container-fluid">
             <img src="img/hero-banner.png" alt="">
         </div>
         <!-- hero text -->
         <div class="container">
-            <h3>This is some hero text</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            <div class="row ">
+                <h3>This is some hero text</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Iure, deleniti. Rem, facere molestiae perferendis sequi 
                 cupiditate deleniti vel quod totam!</p>
+            </div>
+            <div class="row">
+                <button>Go to Explore</button>
+                <button>Go to Explore</button>
+            </div>
         </div>
         <!-- 3 columns -->
-        <div class="container-fluid d-flex justify-content-evenly">
-            <div class="card">
-                <img class="card-img-top" src="img/mens-jeans.png" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">Mens Jeans</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-success">Click To Explore</a>
+        <div class="container-fluid">
+            <div class="row justify-content-evenly">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="img/mens-jeans.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Mens Jeans</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-success">Click To Explore</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/mens-hats.png" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">Mens Hats & Caps</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-success">Click To Explore</a>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="img/mens-hats.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Mens Hats & Caps</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-success">Click To Explore</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/mens-shirts.png" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">Mens Shirts</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-success">Click To Explore</a>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="img/mens-shirts.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Mens Shirts</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-success">Click To Explore</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
